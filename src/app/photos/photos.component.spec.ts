@@ -1,16 +1,17 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { AppComponent } from './app.component';
-import { AppComponentService } from  './app.service';
-import {HttpModule,ResponseOptions} from '@angular/http';
+import { PhotosComponent } from './photos.component';
 import { RouterTestingModule } from '@angular/router/testing';
+import { AppComponentService } from  '../app.service';
+import {HttpModule,ResponseOptions} from '@angular/http';
 
-describe('AppComponent', () => {
-  let component: AppComponent;
-  let fixture: ComponentFixture<AppComponent>;
+describe('PhotosComponent', () => {
+  let component: PhotosComponent;
+  let fixture: ComponentFixture<PhotosComponent>;
 
   beforeEach(async(() => {
+
     TestBed.configureTestingModule({
-      declarations: [ AppComponent ],
+      declarations: [ PhotosComponent ],
        imports: [
         HttpModule,RouterTestingModule
       ],
@@ -20,7 +21,7 @@ describe('AppComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AppComponent);
+    fixture = TestBed.createComponent(PhotosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

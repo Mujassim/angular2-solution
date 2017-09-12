@@ -22,6 +22,6 @@ export class AppComponentService {
        .map(this.responseData);
    }
    getPhotoDetails(albumId:number):Observable<Array<any>>{ 
-       return this.http.request(`http://jsonplaceholder.typicode.com/albums/${albumId}/photos/`).map((res:Response) => res.json()) ;
+       return this.http.request(`http://jsonplaceholder.typicode.com/albums/${albumId}/photos/`).map(this.responseData) ;
    }
 }

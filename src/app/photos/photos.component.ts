@@ -1,11 +1,11 @@
 import {Component,OnInit} from '@angular/core'
-import { AppComponentService } from  './app.service';
+import { AppComponentService } from  '../app.service';
 import {Router, ActivatedRoute} from '@angular/router';
 import { ParamMap } from '@angular/router';
 
 @Component({
 templateUrl: './photos.component.html',
-styleUrls: ['./app.component.css']
+styleUrls: ['../app.component.css']
 })
 export class PhotosComponent implements OnInit
 {
