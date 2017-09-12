@@ -13,12 +13,14 @@
             <table class="table-center table-bordered table-striped table-condensed userDesc">
         		<thead>
         			<tr class="tableHeader">
+                        <th>User Id</th>
                         <th>Album Id</th>
         				<th>Album Title</th>
         			</tr>
         		</thead>
                 <tbody>
                     <tr *ngFor='let albumDetails of albumDetails'>
+                        <td>{{albumDetails.userId}}</td>
                        <td>{{albumDetails.id}}</td>
                         <td><a [routerLink]="['./albums',albumDetails.id]" routerLinkActive="active">
                             {{albumDetails.title}}
