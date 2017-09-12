@@ -1,0 +1,32 @@
+ <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center title">
+               User Albums
+                <a class='btn btn-default' (click)='onExit()' style='width:80px'>
+            <i class='glyphicon glyphicon glyphicon-remove'></i> Exit
+        </a>
+            </h3>
+          <div class="title-underline"></div>
+        </div>
+         <div class="col-md-12">
+            <table class="table-center table-bordered table-striped table-condensed userDesc">
+        		<thead>
+        			<tr class="tableHeader">
+                        <th>Album Id</th>
+        				<th>Album Title</th>
+        			</tr>
+        		</thead>
+                <tbody>
+                    <tr *ngFor='let albumDetails of albumDetails'>
+                       <td>{{albumDetails.id}}</td>
+                        <td><a [routerLink]="['./albums',albumDetails.id]" routerLinkActive="active">
+                            {{albumDetails.title}}
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+        	</table>
+        </div>
+    </div>
+</div>

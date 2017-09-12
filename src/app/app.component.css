@@ -6,3 +6,20 @@
 .table-center{
     margin: 0 auto;
 }
+
+.userDesc td{
+    color:#337ab7;
+}
+.userDesc a:hover{
+    cursor:pointer;
+}
+
+.title{
+    color:#af3030;
+    font-weight: 700;
+}
+
+.title-underline{
+    border-bottom: 3px solid #d42e6b;
+    margin-bottom: 20px;
+}
