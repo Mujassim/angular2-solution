@@ -23,3 +23,8 @@
     border-bottom: 3px solid #d42e6b;
     margin-bottom: 20px;
 }
+
+.albumname-class :hover,.username-class :hover{
+  font-weight: 700;  
+  text-decoration: none;
+}

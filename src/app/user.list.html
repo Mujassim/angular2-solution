@@ -9,7 +9,7 @@
         <div class="col-md-12">
             <table class="table-center table-bordered table-striped table-condensed userDesc">
         		<thead>
-        			<tr class="tableHeader">
+        		<tr class="tableHeader">
                 <th>User Id</th>
         		<th>User Name</th>
                 <th>User Address</th>
@@ -18,8 +18,8 @@
         		</thead>
                 <tbody>
                     <tr *ngFor='let users of data'>
-                       <td>{{users.id}}</td>
-                        <td><a [routerLink]="['/users', users.id]" routerLinkActive="active">
+                       <td class="userId-class">{{users.id}}</td>
+                        <td class="username-class"><a [routerLink]="['/users', users.id]" routerLinkActive="active">
                             {{users.name}}
                             </a>
                         </td>

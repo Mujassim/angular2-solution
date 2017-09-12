@@ -21,8 +21,8 @@
                 <tbody>
                     <tr *ngFor='let albumDetails of albumDetails'>
                         <td>{{albumDetails.userId}}</td>
-                       <td>{{albumDetails.id}}</td>
-                        <td><a [routerLink]="['./albums',albumDetails.id]" routerLinkActive="active">
+                       <td class="albumId-class">{{albumDetails.id}}</td>
+                        <td class="albumname-class"><a [routerLink]="['./albums',albumDetails.id]" routerLinkActive="active">
                             {{albumDetails.title}}
                             </a>
                         </td>
