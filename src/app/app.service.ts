@@ -14,11 +14,11 @@ export class AppComponentService {
     }
 
       getUserDetails():Observable<Array<any>>{ 
-      return this.http.request('http://jsonplaceholder.typicode.com/users').map(this.responseData) ;
+      return this.http.request('http://jsonplaceholder.typicode.com/users/').map(this.responseData) ;
    }
 
     getAlbumDetails(userId:number):Observable<Array<any>>{ 
-       return this.http.request(`http://jsonplaceholder.typicode.com/users/${userId}/albums`)
+       return this.http.request(`http://jsonplaceholder.typicode.com/users/${userId}/albums/`)
        .map(this.responseData);
    }
    getPhotoDetails(albumId:number):Observable<Array<any>>{ 
